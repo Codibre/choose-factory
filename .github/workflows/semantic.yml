@@ -39,7 +39,7 @@ jobs:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           HUSKY: 0
           CI: true
-      - run: npx semantic-release --ci --dry-run
+      - run: npx semantic-release --ci
       - run: finalVersion=$(sed 's/.*"version"&#58; "\(.*\)".*/\1/;t;d' ./package.json)
       - run: |
           if [ "$previousVersion" != "$finalVersion" ]; then

@@ -1,3 +1,10 @@
+## [0.0.2](https://github.com/codibre/chooser-factory/compare/v0.0.1...v0.0.2) (2023-04-27)
+
+
+### Bug Fixes
+
+* removing dry run ([fb15f24](https://github.com/codibre/chooser-factory/commit/fb15f247ed75e62c290350f2dbc2ca5bfb2b8a95))
+
 ## [1.0.1](https://github.com/codibre/chooser-factory/compare/v1.0.0...v1.0.1) (2023-04-27)
 
 

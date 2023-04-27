@@ -1,7 +1,7 @@
 {
   "name": "effi-find",
   "description": "This project is just a template for creation of new projects",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "private": false,
   "author": {
     "name": "Thiago O Santos <tos.oliveira@gmail.com>"
@@ -68,7 +68,16 @@
   "bugs": {
     "url": "https://github.com/codibre/effi-find/issues"
   },
-  "keywords": ["O(1)", "tree", "efficient", "classifier", "search", "find", "fast", "quick"],
+  "keywords": [
+    "O(1)",
+    "tree",
+    "efficient",
+    "classifier",
+    "search",
+    "find",
+    "fast",
+    "quick"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@codibre/confs": "^1.1.2",

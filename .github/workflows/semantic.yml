@@ -2,7 +2,7 @@ name: semantic-release
 
 on:
   push:
-    branches: [masterIgnore]
+    branches: [master]
 
 jobs:
   semantic:
@@ -39,7 +39,7 @@ jobs:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           HUSKY: 0
           CI: true
-      - run: npx semantic-release --ci
+      - run: npx semantic-release --ci --dry-run
       - run: finalVersion=$(sed 's/.*"version"&#58; "\(.*\)".*/\1/;t;d' ./package.json)
       - run: |
           if [ "$previousVersion" != "$finalVersion" ]; then

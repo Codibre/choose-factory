@@ -1,13 +1,13 @@
 {
-  "name": "boilerplate-base",
+  "name": "effi-find",
   "description": "This project is just a template for creation of new projects",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "author": {
     "name": "Thiago O Santos <tos.oliveira@gmail.com>"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "files": [
     "dist"
@@ -62,11 +62,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codibre/boilerplate-base.git"
+    "url": "https://github.com/codibre/chooser-factory.git"
   },
-  "homepage": "https://github.com/codibre/boilerplate-base#readme",
+  "homepage": "https://github.com/codibre/chooser-factory#readme",
   "bugs": {
-    "url": "https://github.com/codibre/boilerplate-base/issues"
+    "url": "https://github.com/codibre/chooser-factory/issues"
   },
   "keywords": [],
   "license": "MIT",
@@ -92,6 +92,9 @@
     "ts-node": "^10.6.0",
     "typedoc": "^0.22.17",
     "typedoc-plugin-markdown": "^3.12.1",
-    "typescript": "^4.5.2"
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@codibre/fluent-iterable": "^1.30.0"
   }
 }

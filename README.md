@@ -40,12 +40,14 @@ const personChooser = chooserFactory(people, 'gender', 'nationality', ['minIncom
 const result = personChooser('F', 'bolivian', 1400);
 ```
 
+As you can imagine, the purpose here is to generate a function that will be used multiple times, so, don't generate the function for each use you want to, otherwise you'll not benefit from it in any way.
+
 ## Shenanigans
 
 * There is no such a thing as a free lunch and being able to get those results in O(1) comes with a price: memory use.
 If you generate a function using only primitive values you'll have a memory use of O(N), which is fine.
 
-* if you use an array field of primitive values, the memory consumption can be up to O(N^d), where d is the number of items of the array, which is not as bad as it looks. This worst case scenario would only happen if every item contains all the possible values in the given array, but if you have a pretty evenly distributed list, it is still manageable, keeping the memory consumption near O(N), so you have to know your data before using this option.
+* if you use an array field of primitive values, the memory consumption can be up to O(N*d), where d is the number of items of the array, which is not as bad as it looks. This worst case scenario would only happen if every item contains all the possible values in the given array, but if you have a pretty evenly distributed list, it is still manageable, keeping the memory consumption near O(N), so you have to know your data before using this option.
 
 * The more dangerous option we have here is really the interval criteria. To achieve an O(1) speed here, this option creates an hashmap based on the GCD of the sizes of the ranges of each item, and also the size of the voids between each item. The precision is an important factor here, so, if you have a really diverse list of ranges, this method can consume up to O(N * d * 10^p), where d is the sum of all the interval sizes, and p the interval precision. So, again, knowing the data before using it is a good way to avoid memory overflow. For example, the higher the GCD the between the interval, the lowest will be the memory consumption, making it even possible to still be O(N) depending on the data.
 

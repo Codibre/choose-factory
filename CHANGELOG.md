@@ -1,3 +1,10 @@
+## [0.1.2](https://github.com/codibre/effi-find/compare/v0.1.1...v0.1.2) (2023-04-27)
+
+
+### Bug Fixes
+
+* bettering GCD algorithm ([c187916](https://github.com/codibre/effi-find/commit/c187916aa0512ce044be5e08cfd4fea6a1145405))
+
 ## [0.1.1](https://github.com/codibre/effi-find/compare/v0.1.0...v0.1.1) (2023-04-27)
 
 

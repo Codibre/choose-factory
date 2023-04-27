@@ -278,10 +278,34 @@ function partitionRange<
 	);
 }
 
+export interface Options {
+	rangeKeysLimit?: number;
+}
+
 export function chooserFactory<
 	T extends object,
 	Keys extends Array<ChooseMapper<T>>,
->(list: T[], ...keys: Keys): Chooser<Keys, T> {
+>(options: Options, list: T[], ...keys: Keys): Chooser<Keys, T>;
+export function chooserFactory<
+	T extends object,
+	Keys extends Array<ChooseMapper<T>>,
+>(list: T[], ...keys: Keys): Chooser<Keys, T>;
+export function chooserFactory<
+	T extends object,
+	Keys extends Array<ChooseMapper<T>>,
+>(
+	optionsOrList: T[] | Options,
+	listOrKey?: T[] | Keys[0],
+	...remainingKeys: Keys
+): Chooser<Keys, T> {
+	const list = Array.isArray(optionsOrList)
+		? optionsOrList
+		: (listOrKey as T[]);
+	const _options = Array.isArray(optionsOrList) ? {} : optionsOrList;
+	const keys = Array.isArray(optionsOrList)
+		? [listOrKey as Keys[0], ...remainingKeys]
+		: remainingKeys;
+
 	let normalized: Iterable<{ value: T }> = fluent(list).map((value) => ({
 		value,
 	}));

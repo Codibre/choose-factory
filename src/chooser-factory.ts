@@ -71,22 +71,20 @@ export type Chooser<Arr extends Array<ChooseMapper<V>>, V> = (
 	...args: ChooserParams<Arr, V>
 ) => V[] | undefined;
 
-function getMdc(value1: number | undefined, value2: number) {
+function getGCD(value1: number | undefined, value2: number) {
 	if (value1 === undefined) return value2;
-	let gcd = 0;
-	while (value1 > 0 && value2 > 0) {
-		if (value1 > value2) {
-			gcd = value2;
-			value1 -= value2;
-		} else {
-			gcd = value1;
-			value2 -= value1;
-		}
+
+	while (value2 !== 0) {
+		const temp = value2;
+		value2 = value1 % value2;
+		value1 = temp;
 	}
-	if (gcd === 0) {
-		throw new RangeError('There is no gcd');
+
+	if (value1 === 0) {
+		throw new RangeError('There is no GCD');
 	}
-	return gcd;
+
+	return value1;
 }
 
 const empty = Symbol('empty');
@@ -237,7 +235,7 @@ function partitionRange<
 		lowerBound = upperBound;
 		upperBound = current[initSymbol];
 		if (upperBound !== undefined && upperBound > lowerBound) {
-			gcd = getMdc(gcd, upperBound - lowerBound);
+			gcd = getGCD(gcd, upperBound - lowerBound);
 		}
 		lowerBound = upperBound ?? Number.NEGATIVE_INFINITY;
 		upperBound = current[endSymbol] ?? Number.POSITIVE_INFINITY;
@@ -258,7 +256,7 @@ function partitionRange<
 				highestBound = upperBound;
 			}
 			if (upperBound > lowerBound) {
-				gcd = getMdc(gcd, upperBound - lowerBound);
+				gcd = getGCD(gcd, upperBound - lowerBound);
 			}
 		}
 	}

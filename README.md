@@ -1,10 +1,9 @@
-[![Actions Status](https://github.com/Codibre/chooser-factory/workflows/build/badge.svg)](https://github.com/Codibre/chooser-factory/actions)
-[![Actions Status](https://github.com/Codibre/chooser-factory/workflows/test/badge.svg)](https://github.com/Codibre/chooser-factory/actions)
-[![Actions Status](https://github.com/Codibre/chooser-factory/workflows/lint/badge.svg)](https://github.com/Codibre/chooser-factory/actions)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/491cc04380c0b2e75200/test_coverage)](https://codeclimate.com/github/Codibre/chooser-factory/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/491cc04380c0b2e75200/maintainability)](https://codeclimate.com/github/Codibre/chooser-factory/maintainability)
-[![Packages](https://david-dm.org/Codibre/chooser-factory.svg)](https://david-dm.org/Codibre/chooser-factory)
-[![npm version](https://badge.fury.io/js/chooser-factory.svg)](https://badge.fury.io/js/chooser-factory)
+[![Actions Status](https://github.com/Codibre/effi-find/workflows/build/badge.svg)](https://github.com/Codibre/effi-find/actions)
+[![Actions Status](https://github.com/Codibre/effi-find/workflows/test/badge.svg)](https://github.com/Codibre/effi-find/actions)
+[![Actions Status](https://github.com/Codibre/effi-find/workflows/lint/badge.svg)](https://github.com/Codibre/effi-find/actions)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/491cc04380c0b2e75200/test_coverage)](https://codeclimate.com/github/Codibre/effi-find/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/491cc04380c0b2e75200/maintainability)](https://codeclimate.com/github/Codibre/effi-find/maintainability)
+[![npm version](https://badge.fury.io/js/effi-find.svg)](https://badge.fury.io/js/effi-find)
 
 This library aims to generates a function that will return any list of items of a given list that meet an established criteria, always with processing complexity O(1).
 
@@ -13,7 +12,7 @@ To achieve such feature, hashmaps are generated based on the number of criteria 
 ## How to Install
 
 ```
-npm i chooser-factory
+npm i effi-find
 ```
 
 ## How to use it

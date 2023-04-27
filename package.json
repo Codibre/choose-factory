@@ -2,7 +2,7 @@
   "name": "effi-find",
   "description": "This project is just a template for creation of new projects",
   "version": "0.0.2",
-  "private": true,
+  "private": false,
   "author": {
     "name": "Thiago O Santos <tos.oliveira@gmail.com>"
   },
@@ -62,13 +62,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codibre/chooser-factory.git"
+    "url": "https://github.com/codibre/effi-find.git"
   },
-  "homepage": "https://github.com/codibre/chooser-factory#readme",
+  "homepage": "https://github.com/codibre/effi-find#readme",
   "bugs": {
-    "url": "https://github.com/codibre/chooser-factory/issues"
+    "url": "https://github.com/codibre/effi-find/issues"
   },
-  "keywords": [],
+  "keywords": ["O(1)", "tree", "efficient", "classifier", "search", "find", "fast", "quick"],
   "license": "MIT",
   "devDependencies": {
     "@codibre/confs": "^1.1.2",

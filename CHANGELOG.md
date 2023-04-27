@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/codibre/effi-find/compare/v0.1.0...v0.1.1) (2023-04-27)
+
+
+### Bug Fixes
+
+* fixing big Oh memory complexity description for arrau fields ([18e2600](https://github.com/codibre/effi-find/commit/18e260064592e81c5de53c256b92b3862dfc8f37))
+
 # [0.1.0](https://github.com/codibre/effi-find/compare/v0.0.2...v0.1.0) (2023-04-27)
 
 

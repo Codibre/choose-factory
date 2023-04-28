@@ -1,6 +1,6 @@
 {
   "name": "effi-find",
-  "description": "This project is just a template for creation of new projects",
+  "description": "Creates a function to choose an Item from a list in O(1)",
   "version": "0.1.2",
   "private": false,
   "author": {

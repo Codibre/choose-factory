@@ -1,3 +1,10 @@
+## [0.1.3](https://github.com/codibre/effi-find/compare/v0.1.2...v0.1.3) (2023-04-28)
+
+
+### Bug Fixes
+
+* fixing library description ([894381c](https://github.com/codibre/effi-find/commit/894381c5cb4f00483380bd0b516be6c16ee95cc9))
+
 ## [0.1.2](https://github.com/codibre/effi-find/compare/v0.1.1...v0.1.2) (2023-04-27)
 
 
